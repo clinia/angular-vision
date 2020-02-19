@@ -1,0 +1,19 @@
+{
+  "$schema": "../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../dist/angular-vision",
+  "lib": {
+    "flatModuleFile": "angular-vision",
+    "entryFile": "./index.ts",
+    "umdId": "cvi",
+    "amdId": "cvi",
+    "umdModuleIds": {
+      "clinia": "clinia",
+      "clinia/index": "clinia",
+      "@clinia/vision/es": "vision",
+      "@clinia/vision/es/connectors": "vision.connectors",
+      "lodash": "_",
+      "querystring-es3/encode": "qs.encode",
+      "@clinia/search-helper": "searchHelper"
+    }
+  }
+}

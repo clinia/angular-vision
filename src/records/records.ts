@@ -25,11 +25,8 @@ export interface RecordsState {
       <!-- default rendering if no template specified -->
       <div *ngIf="!template">
         <ul [class]="cx('list')">
-          <li
-            [class]="cx('item')"
-            *ngFor="let record of state.records"
-          >
-            {{record.name}}
+          <li [class]="cx('item')" *ngFor="let record of state.records">
+            {{ record.name }}
           </li>
         </ul>
       </div>
@@ -63,7 +60,9 @@ export class NgCviRecords extends BaseWidget {
   }
 
   updateState = (state, isFirstRendering: boolean) => {
-    if (isFirstRendering) { return; }
+    if (isFirstRendering) {
+      return;
+    }
     this.state = state;
-  }
+  };
 }

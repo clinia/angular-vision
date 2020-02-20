@@ -64,7 +64,9 @@ export class NgCviVision implements AfterViewInit, OnInit, OnDestroy {
   public createVisionInstance(config: VisionConfig) {
     // remove URLSync widget if on SSR
     if (!isPlatformBrowser(this.platformId)) {
-      if (typeof config.routing !== 'undefined') { delete config.routing; }
+      if (typeof config.routing !== 'undefined') {
+        delete config.routing;
+      }
     }
 
     if (typeof config.searchClient.addCliniaAgent === 'function') {
@@ -93,5 +95,5 @@ export class NgCviVision implements AfterViewInit, OnInit, OnDestroy {
       results: this.visionInstance.helper.lastResults,
       state: this.visionInstance.helper.state,
     });
-  }
+  };
 }

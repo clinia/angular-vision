@@ -1,5 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pagination renders does not uses pagesPadding when numPages < pagesPadding * 2 + 1 1`] = `
+<ng-component
+  testedWidget={[Function NgCviPagination]}
+>
+  <cvi-vision>
+    <cvi-pagination>
+      <div
+        class="cvi-Pagination"
+      >
+        <ul
+          class="cvi-Pagination-list"
+        >
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page cvi-Pagination-item--selected"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               1 
+            </a>
+          </li>
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               2 
+            </a>
+          </li>
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               3 
+            </a>
+          </li>
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               4 
+            </a>
+          </li>
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               5 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--nextPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               › 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--lastPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ›› 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </cvi-pagination>
+  </cvi-vision>
+</ng-component>
+`;
+
 exports[`Pagination renders markup without state 1`] = `
 <ng-component
   testedWidget={[Function NgCviPagination]}
@@ -8,12 +122,11 @@ exports[`Pagination renders markup without state 1`] = `
     <cvi-pagination>
       <div
         class="cvi-Pagination cvi-Pagination--noRefinement"
-        ng-reflect-ng-class="cvi-Pagination,cvi-Pagination-"
       >
         <ul
           class="cvi-Pagination-list"
         >
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
           >
@@ -21,10 +134,10 @@ exports[`Pagination renders markup without state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ‹‹
+               ‹‹ 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
           >
@@ -32,11 +145,11 @@ exports[`Pagination renders markup without state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ‹
+               ‹ 
             </a>
           </li>
-
-
+          
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--nextPage"
           >
@@ -44,10 +157,10 @@ exports[`Pagination renders markup without state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ›
+               › 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--lastPage"
           >
@@ -55,7 +168,7 @@ exports[`Pagination renders markup without state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ››
+               ›› 
             </a>
           </li>
         </ul>
@@ -73,12 +186,11 @@ exports[`Pagination renders with pages in state 1`] = `
     <cvi-pagination>
       <div
         class="cvi-Pagination"
-        ng-reflect-ng-class="cvi-Pagination,"
       >
         <ul
           class="cvi-Pagination-list"
         >
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
           >
@@ -86,10 +198,10 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ‹‹
+               ‹‹ 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
           >
@@ -97,10 +209,10 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ‹
+               ‹ 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--page cvi-Pagination-item--selected"
           >
@@ -108,7 +220,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               1
+               1 
             </a>
           </li>
           <li
@@ -118,7 +230,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               2
+               2 
             </a>
           </li>
           <li
@@ -128,7 +240,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               3
+               3 
             </a>
           </li>
           <li
@@ -138,7 +250,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               4
+               4 
             </a>
           </li>
           <li
@@ -148,7 +260,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               5
+               5 
             </a>
           </li>
           <li
@@ -158,7 +270,7 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               6
+               6 
             </a>
           </li>
           <li
@@ -168,10 +280,10 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               7
+               7 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--nextPage"
           >
@@ -179,10 +291,10 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ›
+               › 
             </a>
           </li>
-
+          
           <li
             class="cvi-Pagination-item cvi-Pagination-item--lastPage"
           >
@@ -190,7 +302,229 @@ exports[`Pagination renders with pages in state 1`] = `
               class="cvi-Pagination-link"
               href="null"
             >
-               ››
+               ›› 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </cvi-pagination>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Pagination should add cvi-Pagination--noRefinement CSS class on root when numPages === 0 1`] = `
+<ng-component
+  testedWidget={[Function NgCviPagination]}
+>
+  <cvi-vision>
+    <cvi-pagination>
+      <div
+        class="cvi-Pagination cvi-Pagination--noRefinement"
+      >
+        <ul
+          class="cvi-Pagination-list"
+        >
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹ 
+            </a>
+          </li>
+          
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--nextPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               › 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--lastPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ›› 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </cvi-pagination>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Pagination should add cvi-Pagination--noRefinement CSS class on root when numPages === 1 1`] = `
+<ng-component
+  testedWidget={[Function NgCviPagination]}
+>
+  <cvi-vision>
+    <cvi-pagination>
+      <div
+        class="cvi-Pagination cvi-Pagination--noRefinement"
+      >
+        <ul
+          class="cvi-Pagination-list"
+        >
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page cvi-Pagination-item--selected"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               1 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--nextPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               › 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--lastPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ›› 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </cvi-pagination>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Pagination should not add cvi-Pagination--noRefinement CSS class on root when numPages > 1 1`] = `
+<ng-component
+  testedWidget={[Function NgCviPagination]}
+>
+  <cvi-vision>
+    <cvi-pagination>
+      <div
+        class="cvi-Pagination"
+      >
+        <ul
+          class="cvi-Pagination-list"
+        >
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--firstPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--previousPage cvi-Pagination-item--disabled"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ‹ 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page cvi-Pagination-item--selected"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               1 
+            </a>
+          </li>
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--page"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               2 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--nextPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               › 
+            </a>
+          </li>
+          
+          <li
+            class="cvi-Pagination-item cvi-Pagination-item--lastPage"
+          >
+            <a
+              class="cvi-Pagination-link"
+              href="null"
+            >
+               ›› 
             </a>
           </li>
         </ul>

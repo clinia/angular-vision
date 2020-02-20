@@ -22,8 +22,6 @@ export { NgCviVision };
 // Custom widget with BaseWidget class
 export { BaseWidget, Widget, Connector } from './base-widget';
 
-
-
 const NGCVI_MODULES = [
   NgCviPaginationModule,
   NgCviRecordsModule,

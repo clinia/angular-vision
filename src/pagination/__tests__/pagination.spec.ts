@@ -31,7 +31,7 @@ describe('Pagination', () => {
   });
 
   it('renders does not uses pagesPadding when numPages < pagesPadding * 2 + 1', () => {
-    const fixture = render({ nbPages: 5 });
+    const fixture = render({ numPages: 5 });
     const pages = fixture.debugElement.nativeElement.querySelectorAll(
       `.${cx('item', 'page')}`
     );
@@ -82,9 +82,9 @@ describe('Pagination', () => {
     expect(refine).toHaveBeenCalledWith(defaultState.numPages - 1);
   });
 
-  it('should not refine when there\'s no other pages', () => {
+  it("should not refine when there's no other pages", () => {
     const refine = jest.fn();
-    const fixture = render({ refine, nbPages: 1 });
+    const fixture = render({ refine, numPages: 1 });
 
     fixture.componentInstance.testedWidget.showLast = true;
     fixture.detectChanges();
@@ -109,8 +109,8 @@ describe('Pagination', () => {
 
     expect(refine).not.toHaveBeenCalled();
   });
-  it('should not add cvi-Pagination--noRefinement CSS class on root when nbPages > 1', () => {
-    const fixture = render({ nbPages: 2 });
+  it('should not add cvi-Pagination--noRefinement CSS class on root when numPages > 1', () => {
+    const fixture = render({ numPages: 2 });
     expect(
       fixture.debugElement.nativeElement.querySelector(
         'cvi-pagination > .cvi-Pagination--noRefinement'
@@ -118,8 +118,8 @@ describe('Pagination', () => {
     ).toBeFalsy();
     expect(fixture).toMatchSnapshot();
   });
-  it('should add cvi-Pagination--noRefinement CSS class on root when nbPages === 1', () => {
-    const fixture = render({ nbPages: 1 });
+  it('should add cvi-Pagination--noRefinement CSS class on root when numPages === 1', () => {
+    const fixture = render({ numPages: 1 });
     expect(
       fixture.debugElement.nativeElement.querySelector(
         'cvi-pagination > .cvi-Pagination--noRefinement'
@@ -127,8 +127,8 @@ describe('Pagination', () => {
     ).toBeTruthy();
     expect(fixture).toMatchSnapshot();
   });
-  it('should add cvi-Pagination--noRefinement CSS class on root when nbPages === 0', () => {
-    const fixture = render({ nbPages: 0 });
+  it('should add cvi-Pagination--noRefinement CSS class on root when numPages === 0', () => {
+    const fixture = render({ numPages: 0 });
     expect(
       fixture.debugElement.nativeElement.querySelector(
         'cvi-pagination > .cvi-Pagination--noRefinement'

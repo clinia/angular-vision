@@ -1,5 +1,5 @@
-export function bem(widgetName: string) {
-  const cx = function(element?: string, subElement?: string) {
+export const bem = (widgetName: string) => {
+  return (element?: string, subElement?: string): string => {
     let cssClass = `cvi-${widgetName}`;
     if (element) {
       cssClass += `-${element}`;
@@ -9,15 +9,14 @@ export function bem(widgetName: string) {
     }
     return cssClass;
   };
-  return cx;
-}
+};
 
-export function parseNumberInput(input?: number | string) {
+export const parseNumberInput = (input?: number | string): number => {
   return typeof input === 'string' ? parseInt(input, 10) : input;
-}
+};
 
-export function noop(...args: any[]): void {}
+export const noop = (...args: any[]): void => {};
 
-export function capitalize(s) {
+export const capitalize = (s: string): string => {
   return s.charAt(0).toUpperCase() + s.slice(1);
-}
+};

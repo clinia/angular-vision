@@ -24,7 +24,9 @@ describe('Vision', () => {
     };
 
     @Component({
-      template: `<cvi-vision [config]="config"> </cvi-vision>`,
+      template: `
+        <cvi-vision [config]="config"> </cvi-vision>
+      `,
     })
     class TestContainer {
       public config = {
@@ -59,7 +61,9 @@ describe('Vision', () => {
     };
 
     @Component({
-      template: `<cvi-vision [config]="config"> </cvi-vision>`,
+      template: `
+        <cvi-vision [config]="config"> </cvi-vision>
+      `,
     })
     class TestContainer {
       public config = {

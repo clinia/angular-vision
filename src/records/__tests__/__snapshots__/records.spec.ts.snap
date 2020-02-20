@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Records renders markup with state 1`] = `
+<ng-component
+  testedWidget={[Function NgCviRecords]}
+>
+  <cvi-vision>
+    <cvi-records>
+      <div
+        class="cvi-Records"
+      >
+        
+        
+        <div>
+          <ul
+            class="cvi-Records-list"
+          >
+            
+            <li
+              class="cvi-Records-item"
+            >
+               foo 
+            </li>
+            <li
+              class="cvi-Records-item"
+            >
+               bar 
+            </li>
+            <li
+              class="cvi-Records-item"
+            >
+               foobar 
+            </li>
+            <li
+              class="cvi-Records-item"
+            >
+               barfoo 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </cvi-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Records renders markup without state 1`] = `
+<ng-component
+  testedWidget={[Function NgCviRecords]}
+>
+  <cvi-vision>
+    <cvi-records>
+      <div
+        class="cvi-Records"
+      >
+        
+        
+        <div>
+          <ul
+            class="cvi-Records-list"
+          >
+            
+          </ul>
+        </div>
+      </div>
+    </cvi-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Records should expose records to the passed template 1`] = `
+<ng-component
+  testedWidget={[Function NgCviRecords]}
+>
+  <cvi-vision>
+    <cvi-records>
+      <div
+        class="cvi-Records"
+      >
+        
+        <ul>
+          
+          <li>
+             foo 
+          </li>
+          <li>
+             bar 
+          </li>
+          <li>
+             foobar 
+          </li>
+          <li>
+             barfoo 
+          </li>
+        </ul>
+        
+      </div>
+    </cvi-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`Records should expose results to the passed template 1`] = `
+<ng-component
+  testedWidget={[Function NgCviRecords]}
+>
+  <cvi-vision>
+    <cvi-records>
+      <div
+        class="cvi-Records"
+      >
+        
+         {
+    "total": 50,
+    "page": 0,
+    "perPage": 20
+  } 
+        
+      </div>
+    </cvi-records>
+  </cvi-vision>
+</ng-component>
+`;

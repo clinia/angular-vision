@@ -28,7 +28,7 @@ describe('SearchBox', () => {
     it('should set focus on init when true', () => {
       const fixture = createRenderer({
         defaultState,
-        template: '<cvi-search-box [autofocus]=\'true\'></cvi-search-box>',
+        template: "<cvi-search-box [autofocus]='true'></cvi-search-box>",
         TestedWidget: NgCviSearchBox,
       })();
       const widget = fixture.componentInstance.testedWidget;
@@ -37,7 +37,7 @@ describe('SearchBox', () => {
     it('should not set focus on init when false', () => {
       const fixture = createRenderer({
         defaultState,
-        template: '<cvi-search-box [autofocus]=\'false\'></cvi-search-box>',
+        template: "<cvi-search-box [autofocus]='false'></cvi-search-box>",
         TestedWidget: NgCviSearchBox,
       })();
       const widget = fixture.componentInstance.testedWidget;

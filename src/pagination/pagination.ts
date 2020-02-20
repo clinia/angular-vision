@@ -20,10 +20,7 @@ import { parseNumberInput, noop } from '../utils';
             (state.currentRefinement === 0 ? ' ' + cx('item', 'disabled') : '')
           "
         >
-          <a
-            [href]="state.createURL(0)"
-            [class]="cx('link')"
-          >
+          <a [href]="state.createURL(0)" [class]="cx('link')">
             ‹‹
           </a>
         </li>
@@ -51,16 +48,15 @@ import { parseNumberInput, noop } from '../utils';
             cx('item') +
             ' ' +
             cx('item', 'page') +
-            (state.currentRefinement === page ? ' ' + cx('item', 'selected') : '')
+            (state.currentRefinement === page
+              ? ' ' + cx('item', 'selected')
+              : '')
           "
           *ngFor="let page of pages"
           (click)="refine($event, page)"
         >
-          <a
-            [class]="cx('link')"
-            [href]="state.createURL(page)"
-          >
-            {{page + 1}}
+          <a [class]="cx('link')" [href]="state.createURL(page)">
+            {{ page + 1 }}
           </a>
         </li>
 
@@ -71,7 +67,9 @@ import { parseNumberInput, noop } from '../utils';
             cx('item') +
             ' ' +
             cx('item', 'nextPage') +
-            (state.currentRefinement + 1 === state.numPages ? ' ' + cx('item', 'disabled') : '')
+            (state.currentRefinement + 1 === state.numPages
+              ? ' ' + cx('item', 'disabled')
+              : '')
           "
         >
           <a
@@ -89,13 +87,12 @@ import { parseNumberInput, noop } from '../utils';
             cx('item') +
             ' ' +
             cx('item', 'lastPage') +
-            (state.currentRefinement + 1 === state.numPages ? ' ' + cx('item', 'disabled') : '')
+            (state.currentRefinement + 1 === state.numPages
+              ? ' ' + cx('item', 'disabled')
+              : '')
           "
         >
-          <a
-            [href]="state.createURL(state.numPages - 1)"
-            [class]="cx('link')"
-          >
+          <a [href]="state.createURL(state.numPages - 1)" [class]="cx('link')">
             ››
           </a>
         </li>

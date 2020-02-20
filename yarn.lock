@@ -1168,10 +1168,10 @@
     "@clinia/logger-common" "^2.0.0-beta.1"
     "@clinia/requester-common" "^2.0.0-beta.1"
 
-"@clinia/vision@^1.0.0-beta.0":
-  version "1.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@clinia/vision/-/vision-1.0.0-beta.0.tgz#6d386c8024956130b93d498b7c039d8abcad8f8d"
-  integrity sha512-5+ZqGyL7cWPPRVarbcdXQyJmxGH+dcNFC2iGAgNHSotYatq4b6lcLwFgBFerBN3ksCrD3W0CjzwrboJpH2ILGA==
+"@clinia/vision@^1.0.0-beta.2":
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@clinia/vision/-/vision-1.0.0-beta.2.tgz#39fcf5513840e8c12d0ba07d58c1111c202dd049"
+  integrity sha512-zgPu/sX5v+O09h/Gr8/D3j04DSaHDHr31kJciJxCwjalEzX3bik1pe/iB+lpQoB7TS5m9fAbh17Csp/fbr51dQ==
   dependencies:
     "@clinia/search-helper" "2.0.0-beta.0"
     classnames "2.2.6"

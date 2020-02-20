@@ -1,6 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 
 // Modules
+import { NgCviConfigureModule } from './configure/configure.module';
+export { NgCviConfigureModule };
+import { NgCviInfiniteRecordsModule } from './infinite-records/infinite-records.module';
+export { NgCviInfiniteRecordsModule };
 import { NgCviPaginationModule } from './pagination/pagination.module';
 export { NgCviPaginationModule };
 import { NgCviRecordsModule } from './records/records.module';
@@ -11,6 +15,7 @@ import { NgCviVisionModule } from './vision/vision.module';
 export { NgCviVisionModule };
 
 // Components
+export { NgCviInfiniteRecords } from './infinite-records/infinite-records';
 export { NgCviPagination } from './pagination/pagination';
 export { NgCviRecords } from './records/records';
 export { NgCviSearchBox } from './search-box/search-box';
@@ -23,6 +28,8 @@ export { NgCviVision };
 export { BaseWidget, Widget, Connector } from './base-widget';
 
 const NGCVI_MODULES = [
+  NgCviConfigureModule,
+  NgCviInfiniteRecordsModule,
   NgCviPaginationModule,
   NgCviRecordsModule,
   NgCviSearchBoxModule,

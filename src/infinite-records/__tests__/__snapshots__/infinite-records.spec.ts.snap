@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfiniteHits renders markup with state 1`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        
+        
+        <div>
+          <ul
+            class="cvi-InfiniteRecords-list"
+          >
+            
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foo 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               bar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foobar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               barfoo 
+            </li>
+          </ul>
+        </div>
+        
+        <button
+          class="cvi-InfiniteRecords-loadMore"
+        >
+           Show more results 
+        </button>
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`InfiniteHits renders markup without state 1`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        
+        
+        <div>
+          <ul
+            class="cvi-InfiniteRecords-list"
+          >
+            
+          </ul>
+        </div>
+        
+        <button
+          class="cvi-InfiniteRecords-loadMore"
+        >
+           Show more results 
+        </button>
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`InfiniteHits should allow calling insightsClient 1`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        <ul>
+          
+          <li>
+            <button
+              id="add-to-cart-1"
+            />
+          </li>
+          <li>
+            <button
+              id="add-to-cart-2"
+            />
+          </li>
+          <li>
+            <button
+              id="add-to-cart-3"
+            />
+          </li>
+          <li>
+            <button
+              id="add-to-cart-4"
+            />
+          </li>
+        </ul>
+        
+        
+        
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`InfiniteHits should disable \`showMore\` button 1`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        
+        
+        <div>
+          <ul
+            class="cvi-InfiniteRecords-list"
+          >
+            
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foo 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               bar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foobar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               barfoo 
+            </li>
+          </ul>
+        </div>
+        
+        <button
+          class="cvi-InfiniteRecords-loadMore cvi-InfiniteRecords-loadMore--disabled"
+          disabled=""
+        >
+           Show more results 
+        </button>
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`InfiniteHits should disable \`showPrevious\` button on first page 2`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        
+        <button
+          class="cvi-InfiniteRecords-loadPrevious cvi-InfiniteRecords-loadPrevious--disabled"
+          disabled=""
+        >
+           Show previous results 
+        </button>
+        
+        <div>
+          <ul
+            class="cvi-InfiniteRecords-list"
+          >
+            
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foo 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               bar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               foobar 
+            </li>
+            <li
+              class="cvi-InfiniteRecords-item"
+            >
+               barfoo 
+            </li>
+          </ul>
+        </div>
+        
+        <button
+          class="cvi-InfiniteRecords-loadMore"
+        >
+           Show more results 
+        </button>
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;
+
+exports[`InfiniteHits should render with custom templates 1`] = `
+<ng-component
+  testedWidget={[Function NgCviInfiniteRecords]}
+>
+  <cvi-vision>
+    <cvi-infinite-records>
+      <div
+        class="cvi-InfiniteRecords"
+      >
+        
+        <button>
+          Load previous
+        </button>
+        
+        <div>
+          <strong>
+            foo
+          </strong>
+        </div>
+        <div>
+          <strong>
+            bar
+          </strong>
+        </div>
+        <div>
+          <strong>
+            foobar
+          </strong>
+        </div>
+        <div>
+          <strong>
+            barfoo
+          </strong>
+        </div>
+        <button>
+          Load more
+        </button>
+        
+        
+        
+      </div>
+    </cvi-infinite-records>
+  </cvi-vision>
+</ng-component>
+`;

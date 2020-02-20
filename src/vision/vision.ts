@@ -18,6 +18,27 @@ import { Widget } from '../base-widget';
 import { VERSION } from '../version';
 import { VisionOptions, Vision } from '@clinia/vision/es/types';
 
+export type SearchParameters = {
+  // Highlighting / Snippeting
+  highlightPreTag?: string;
+  highlightPostTag?: string;
+
+  // Pagination
+  page?: number;
+  perPage?: number;
+
+  // Geo-Search
+  aroundLatLng?: string;
+  aroundRadius?: number | 'all';
+  aroundPrecision?: number;
+  insideBoundingBox?: GeoRectangle | GeoRectangle[];
+
+  // Query Strategy
+  queryType?: 'prefix_last' | 'prefix_none';
+};
+
+export type GeoRectangle = [number, number, number, number];
+
 export interface Record {
   [attribute: string]: any;
   id: string;
@@ -57,6 +78,7 @@ export class NgCviVision implements AfterViewInit, OnInit, OnDestroy {
   }
 
   public ngOnDestroy() {
+    // @ts-ignore
     this.visionInstance.removeListener('render', this.onRender);
     this.visionInstance.dispose();
   }
@@ -69,12 +91,16 @@ export class NgCviVision implements AfterViewInit, OnInit, OnDestroy {
       }
     }
 
+    // @ts-ignore
     if (typeof config.searchClient.addCliniaAgent === 'function') {
+      // @ts-ignore
       config.searchClient.addCliniaAgent(`angular (${AngularVersion.full})`);
+      // @ts-ignore
       config.searchClient.addCliniaAgent(`angular-vision (${VERSION})`);
     }
 
     this.visionInstance = vision(config);
+    // @ts-ignore
     this.visionInstance.on('render', this.onRender);
   }
 

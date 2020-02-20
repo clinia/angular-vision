@@ -31,7 +31,7 @@
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
-    "@clinia/vision": "^1.0.0-beta.0",
+    "@clinia/vision": "^1.0.0-beta.2",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-links": "^5.3.13",
     "@storybook/addon-notes": "^5.3.13",

@@ -2,13 +2,14 @@
   "name": "@clinia/angular-vision",
   "version": "0.0.0",
   "scripts": {
-    "build": "ng build",
+    "build": "ng build --prod",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:build": "build-storybook",
+    "release": "./scripts/release.js"
   },
   "dependencies": {
     "@clinia/search-helper": "^2.0.0-beta.0",

@@ -15,7 +15,7 @@ module.exports = {
     '^.+\\.js$': 'babel-jest'
   },
   "transformIgnorePatterns": [
-    "node_modules/(?!@clinia)"
+    "node_modules/(?!@clinia).+\\.js$"
   ],
   globals: {
     'ts-jest': {

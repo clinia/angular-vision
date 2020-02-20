@@ -8,29 +8,24 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "private": true,
   "dependencies": {
-    "@angular/animations": "~9.0.1",
-    "@angular/common": "~9.0.1",
-    "@angular/compiler": "~9.0.1",
-    "@angular/core": "~9.0.1",
-    "@angular/forms": "~9.0.1",
-    "@angular/platform-browser": "~9.0.1",
-    "@angular/platform-browser-dynamic": "~9.0.1",
-    "@angular/router": "~9.0.1",
     "@clinia/search-helper": "^2.0.0-beta.0",
     "clinia": "^2.0.0-beta.1",
-    "querystring-es3": "^0.2.1",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "lodash": "^4.17.15",
+    "querystring-es3": "^0.2.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.2",
     "@angular-devkit/build-ng-packagr": "~0.900.2",
     "@angular/cli": "~9.0.2",
+    "@angular/common": "^9.0.2",
+    "@angular/compiler": "^9.0.2",
     "@angular/compiler-cli": "~9.0.1",
+    "@angular/core": "^9.0.2",
+    "@angular/forms": "^9.0.2",
     "@angular/language-service": "~9.0.1",
+    "@angular/platform-browser": "~9.0.1",
+    "@angular/platform-browser-dynamic": "~9.0.1",
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
@@ -44,12 +39,23 @@
     "@types/node": "^12.11.1",
     "babel-loader": "^8.0.6",
     "codelyzer": "^5.1.2",
-    "jest": "24",
+    "jest": "25",
     "jest-preset-angular": "^8.0.0",
     "ng-packagr": "^9.0.0",
     "protractor": "~5.4.3",
+    "rxjs": "~6.5.4",
+    "ts-jest": "^25.2.1",
     "ts-node": "~8.3.0",
+    "tslib": "^1.10.0",
     "tslint": "~5.18.0",
-    "typescript": "~3.7.5"
+    "typescript": "~3.7.5",
+    "zone.js": "~0.10.2"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=5.0.0 <9.0.0",
+    "@angular/core": ">=5.0.0 <9.0.0",
+    "@angular/platform-browser": ">=5.0.0 <9.0.0",
+    "@angular/platform-browser-dynamic": ">=5.0.0 <9.0.0",
+    "@clinia/vision": "^1.0.0-beta.2"
   }
 }

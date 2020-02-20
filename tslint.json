@@ -10,7 +10,9 @@
     "prettier": true,
     "no-submodule-imports": false,
     "import-name": false,
-    "object-shorthand-properties-first": false
+    "object-shorthand-properties-first": false,
+    "directive-selector": false,
+    "component-selector": false
   },
   "cliOptions": {
     "exclude": [

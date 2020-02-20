@@ -6,7 +6,7 @@ storiesOf('SearchBox', module)
   .add('default', () => ({
     component: wrapWithRecords({
       template:
-        '<cvi-search-box placeholder=\'Search for pharmacies\'></cvi-search-box>',
+        "<cvi-search-box placeholder='Search for pharmacies'></cvi-search-box>",
     }),
   }))
   .add('search on enter', () => ({

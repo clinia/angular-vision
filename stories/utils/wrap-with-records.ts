@@ -57,10 +57,11 @@ export default ({
           ${template}
         </div>
         <div class="cvi-container cvi-container-playground">
-          <div class="panel-left">
-          </div>
+          <div class="panel-left"></div>
           <div class="panel-right">
-            <cvi-search-box placeholder="Search into pharmacies"></cvi-search-box>
+            <cvi-search-box
+              placeholder="Search into pharmacies"
+            ></cvi-search-box>
             <cvi-records>
               ${records}
             </cvi-records>

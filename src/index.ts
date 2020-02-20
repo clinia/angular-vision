@@ -15,6 +15,7 @@ import { NgCviVisionModule } from './vision/vision.module';
 export { NgCviVisionModule };
 
 // Components
+export { NgCviConfigure } from './configure/configure';
 export { NgCviInfiniteRecords } from './infinite-records/infinite-records';
 export { NgCviPagination } from './pagination/pagination';
 export { NgCviRecords } from './records/records';

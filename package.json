@@ -2,9 +2,9 @@
   "name": "@clinia/angular-vision",
   "version": "0.0.0",
   "scripts": {
-    "build": "ng build --prod",
-    "lint": "ng lint",
-    "lint:fix": "ng lint --fix",
+    "build": "./scripts/build.sh",
+    "lint": "tslint '{test,src,examples}/**/*.ts' -e '**/node_modules/**'",
+    "lint:fix": "tslint '{test,src,examples}/**/*.ts' -e '**/node_modules/**' --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",

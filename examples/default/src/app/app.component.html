@@ -1,0 +1,23 @@
+<cvi-vision [config]="config">
+  <header>
+    <div class="header-searchbox">
+      <cvi-search-box placeholder="Pharmacies, services ..."></cvi-search-box>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="container-results">
+      <cvi-records>
+        <ng-template let-records="records">
+          <ol class="cvi-Records-list">
+            <li class="cvi-Records-item" *ngFor="let record of records">
+              <article class="record">
+                <strong>{{ record.name }}</strong>
+              </article>
+            </li>
+          </ol>
+        </ng-template>
+      </cvi-records>
+    </section>
+  </main>
+</cvi-vision>
